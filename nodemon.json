@@ -1,0 +1,5 @@
+{
+    "watch": ["*"],
+    "ext": "js, gql, ts,json",
+    "ignore": ["src/**/*.spec.ts"]
+  }

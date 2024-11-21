@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "target": "ESNext",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "isolatedModules": true,
+    "noEmit": false,
+  },
+  "include": ["*", "./**/*.gql", "graphql/schema/graphql.d.ts", "graphql/schema/cities.js", "graphql/schema/matches.js", "graphql/schema/rating.js", "graphql/schema/user.js", "graphql/schema/requests.js", "cognito/cognitoPreSignUp"],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+}
