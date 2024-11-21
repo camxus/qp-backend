@@ -8,7 +8,7 @@ provider:
   runtime: nodejs18.x
   httpApi:
     cors: true
-  region: ${env:AWS_REGION_CODE, 'us-east-1'}  # Default to 'us-east-1' if not set
+  region: eu-north-1  # Default to 'us-east-1' if not set
   environment:
     AWS_REGION_CODE: ${env:AWS_REGION_CODE, 'us-east-1'}  # Default to 'us-east-1' if not set
 
