@@ -27,7 +27,6 @@ functions:
 plugins:
   - serverless-plugin-typescript
   - aws-amplify-serverless-plugin
-  - serverless-dotenv-plugin
 
 custom:
   amplify:
