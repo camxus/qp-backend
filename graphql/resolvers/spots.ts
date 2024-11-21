@@ -27,7 +27,7 @@ interface SpotInput {
 type Filters = Partial<Record<keyof SpotInput, any>>;
 type SpotsByLocation = { lon: number; lat: number; latDelta: number; lonDelta: number }
 
-const client = new DynamoDBClient({ region: process.env.AWS_REGION });
+const client = new DynamoDBClient({ region: process.env.AWS_REGION_CODE });
 
 const createSpot = async (input: SpotInput) => {
   const spot = {

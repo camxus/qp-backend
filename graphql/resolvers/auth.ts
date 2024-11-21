@@ -14,8 +14,8 @@ import { UserInput } from "./users";
 
 Auth.configure(awsconfig);
 
-const client = new DynamoDBClient({ region: process.env.AWS_REGION});
-const s3Client = new S3Client({ region: process.env.AWS_REGION});
+const client = new DynamoDBClient({ region: process.env.AWS_REGION_CODE});
+const s3Client = new S3Client({ region: process.env.AWS_REGION_CODE});
 
 const createUser = async (params: { password: string } & UserInput) => {
   try {

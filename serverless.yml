@@ -1,13 +1,17 @@
 org: camxus
-app: apollo-lambda
+app: quickpark
 service: apollo-lambda
 
 provider:
   name: aws
-  stage: ${opt:stage, 'dev'}
+  stage: ${opt:stage, 'prod'}
   runtime: nodejs18.x
   httpApi:
     cors: true
+  region: ${env:AWS_REGION_CODE, 'us-east-1'}  # Default to 'us-east-1' if not set
+  environment:
+    AWS_REGION_CODE: ${env:AWS_REGION_CODE, 'us-east-1'}  # Default to 'us-east-1' if not set
+
 
 functions:
   graphql:
@@ -23,6 +27,7 @@ functions:
 plugins:
   - serverless-plugin-typescript
   - aws-amplify-serverless-plugin
+  - serverless-dotenv-plugin
 
 custom:
   amplify:

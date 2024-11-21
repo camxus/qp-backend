@@ -16,7 +16,7 @@ interface CityInput {
   name: string;
 }
 
-const client = new DynamoDBClient({ region: process.env.AWS_REGION });
+const client = new DynamoDBClient({ region: process.env.AWS_REGION_CODE });
 
 const createCity = async ({ country, location, name }: CityInput) => {
   const city = {
