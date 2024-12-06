@@ -13,6 +13,7 @@ module.exports = /* GraphQL */ `
     reserved: Boolean
     cityId: ID
     active: Boolean
+    ping: String
     createdAt: String
   }
 
@@ -28,6 +29,7 @@ module.exports = /* GraphQL */ `
     reserved: Boolean
     cityId: ID
     active: Boolean
+    ping: String
     createdAt: String
   }
 

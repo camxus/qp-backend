@@ -22,6 +22,8 @@ interface SpotInput {
   reserved: boolean;
   active: boolean,
   cityId: string
+  ping: string
+  createdAt: string
 }
 
 type Filters = Partial<Record<keyof SpotInput, any>>;

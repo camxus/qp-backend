@@ -25,6 +25,7 @@ functions:
         path: /graphql
         method: GET
 plugins:
+  - serverless-offline
   - serverless-plugin-typescript
   - aws-amplify-serverless-plugin
 

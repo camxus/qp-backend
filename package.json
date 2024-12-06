@@ -22,6 +22,7 @@
     "apollo-server": "^2.19.1",
     "apollo-server-lambda": "^2.19.1",
     "aws-amplify": "^5.3.10",
+    "axios": "^1.7.7",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
@@ -35,6 +36,7 @@
     "uuid": "^9.0.1"
   },
   "devDependencies": {
+    "serverless-offline": "^14.3.4",
     "aws-amplify-serverless-plugin": "^1.4.1",
     "serverless": "^3.34.0",
     "serverless-plugin-typescript": "^2.1.5",
